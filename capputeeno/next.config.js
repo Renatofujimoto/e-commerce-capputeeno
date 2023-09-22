@@ -4,5 +4,16 @@ const nextConfig = {
     styledComponents: true
   }
 }
-
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+        port: '',
+        pathname: '/xesque-dev/**',
+      },
+    ],
+  },
+}
 module.exports = nextConfig
